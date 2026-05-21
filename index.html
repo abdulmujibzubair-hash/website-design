@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Marketplace</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MarketPlace</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#featured">Listings</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-left">
+                <span class="badge">Student Powered • Community Driven</span>
+                <h1>Discover Trusted Sellers. Find What You Need.</h1>
+                <p>A simple marketplace where students buy and sell quality products easily through WhatsApp.</p>
+            <div class="hero-buttons">
+                <a href="#featured" class="btn-primary"> Explore Products</a>
+                <a href="#top-sellers" class="btn-secondary">View Sellers</a>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <h3>100+</h3>
+                    <p>Trusted Sellers</p>
+                </div>
+                <div>
+                    <h3>500+</h3>
+                    <p>Products</p>
+                </div>
+                <div>
+                    <h3>Fast</h3>
+                    <p>WhatsApp Orders</p>
+                </div>
+                <div>
+                    <h3>Safe</h3>
+                    <p>Secure Deals</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-right"> <img src="images/7b61d020-ef17-45c1-80a1-c2ff07cdfa38.png" alt="Marketplace Hero"></div>
+
+    </section>
+
+    <section class="search-section">
+                    <h2>Find Sellers & Products</h2>
+            <input type="text"id="searchInput" placeholder="Search for fashion, tech, sellers..." onkeyup="searchPartners()">
+    </section>
+
+    <main id="categories" class="card-container2">
+        <div class="category">
+            <h2>CATEGORIES</h2>
+        </div>
+                <div class="category1">
+                   <div class="categories">
+                            <button onclick="filter('all')">All</button>
+                            <button onclick="filter('food')">Food</button>
+                            <button onclick="filter('fashion')">Fashion</button>
+                            <button onclick="filter('services')">Services</button>
+                            <button onclick="filter('electronics')">Electronics</button>
+                    </div>
+            </div>
+    </main>
+        <div class="our-partners">
+            <h2>OUR PARTNERS</h2>
+        </div>
+        <div id="partners" class="container">
+             <div class="card" data-category="fashion">
+                    <img src="images/IMG-20260518-WA0032.jpg">
+                <div class="card-body">
+                        <h3>EVERYTHING BY LEEMARH</h3>
+                        <p>HOME OF FASHION</p>
+                        <h4>Brand note: We focus on stylish, trendy and customer friendly services.</h4>
+                        <h4>Motto: Finding your next obsession is our top priority</h4>
+                        <h4>Location: University of Ilorin</h4>
+                <div class="btn-row">
+                    <button onclick="openDetails('fashion')"> View Details</button>
+                    <a class="wa-btn" target="_blank" href="https://wa.me/2347063687986?text=Hello%20I%20want%20to%20patronise%20you">WhatsApp</a>
+                </div>
+                </div>
+            </div>
+
+             <div class="card" data-category="food">
+                    <img src="images/IMG-20260514-WA0001.jpg">
+                <div class="card-body">
+                        <h3>TEEFAH BAKES</h3>
+                        <p>BAKER</p>
+                        <h4>Brand note: We pride ourselves on being your local destination for sweetness. </h4>
+                        <h4>Motto: We make every bite a celebration.</h4>
+                        <h4>Location: University of Ilorin</h4>
+                <div class="btn-row">
+                    <button onclick="openDetails('food')"> View Details</button>
+                    <a class="wa-btn" target="_blank" href="https://wa.me/2347038483174?text=Hello%20I%20am%20interested%20in%20Teefah%20Bakes">WhatsApp</a>
+                </div>
+                </div>
+            </div>
+            
+            <div class="card" data-category="fashion">
+                    <img src="images/IMG-20260512-WA0056.jpg">
+                <div class="card-body">
+                        <h3>AUZELLE</h3>
+                        <p>FASHION HUB</p>
+                        <h4>Brand Note: Golden Elegance Within Reach.</h4>
+                        <h4>Motto: Enhance your elegance. Own your shine always. We got you covered.</h4>
+                        <h4>Location: University Of Ilorin</h4>
+                <div class="btn-row">
+                        <button onclick="openDetails('fashion1')">View Details</button>
+                        <a class="wa-btn" target="_blank" href="https://wa.me/2347081353145?text=Hello%20I%20am%20interested%20in%20Auzelle"> WhatsApp</a>
+                </div>
+                </div>
+            </div>
+            
+            <div class="card" data-category="fashion">
+                    <img src="images/IMG-20260514-WA0017.jpg">
+                <div class="card-body">
+                        <h3>G FASHI</h3>
+                        <p>FASHION WORLD</p>
+                        <h4>Brand note: Your jewelry and your space should feel like you.</h4>
+                        <h4>Motto: We adorn you and your space the way you want to be valued.</h4>
+                        <h4>Location: University of Ilorin</h4>
+                <div class="btn-row">
+                    <button onclick="openDetails('fashion2')"> View Details</button>
+                    <a class="wa-btn" target="_blank" href="https://wa.me/2349017558500?text=Hello%20I%20am%20interested%20in%20G%20Fashi%20fashion%20world">WhatsApp</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="card" data-category="fashion">
+                    <img src="images/IMG-20260520-WA0088.jpg">
+                <div class="card-body">
+                        <h3>ANNIE BLISS</h3>
+                        <p>COSMETICS </p>
+                        <h4>Brand note: Get your glow on with Annie Bliss! skincare essentials. </h4>
+                        <h4>Motto: </h4>
+                        <h4>Location: University of Ilorin</h4>
+                <div class="btn-row">
+                    <button onclick="openDetails('fashion3')"> View Details</button>
+                    <a class="wa-btn" target="_blank" href="https://wa.me/2348083737574?text=Hello%20I%20would%20like%20to%20patronize%20you">WhatsApp</a>
+                </div>
+                </div>
+            </div>
+
+           
+
+            <div class="card" data-category="food">
+                    <img src="">
+                <div class="card-body">
+                        <h3>CAKES N' TREATS BY OYIN</h3>
+                        <p></p>
+                        <h4>Brand note:  </h4>
+                        <h4>Motto: </h4>
+                        <h4>Location: </h4>
+                <div class="btn-row">
+                    <button onclick="openDetails('food1')"> View Details</button>
+                    <a class="wa-btn" target="_blank" href="https://wa.me/2349017558500?text=Hello%20I%20am%20interested%20in%20G%20Fashi%20fashion%20world">WhatsApp</a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="details" class="details">
+                    <h2 id="title"></h2>
+                    <p id="desc"></p>
+        <div id="products" class="products"></div>
+        <button class="close-btn" onclick="closeDetails()">Close</button>
+    </div>
+
+    <section id="featured" class="featured">
+                    <div class="section-header">
+                            <h2>Featured Products</h2>
+                    </div>
+            <div class="featured-container">
+                <div class="featured-card"><img src="images/IMG-20260513-WA0239.jpg">
+                    <div class="featured-info">
+                            <h3>8 inches 4 layered cakes</h3>
+                            <p class="price">₦65,000</p>
+                            <a href="https://wa.me/2347038483174?text=Hello%20I%20saw%20one%20of%20your%20products%20on%20Unilorin%20campus%20marketplace" target="_blank" class="buy-btn">Chat Seller</a>
+                    </div>
+                </div>
+
+                <div class="featured-card"><img src="images/IMG-20260513-WA0238.jpg">
+                    <div class="featured-info">
+                            <h3>Mini Bento Cakes</h3>
+                            <p class="price">₦9,000</p>
+                            <a href="https://wa.me/2347038483174?text=Hello%20I%20saw%20one%20of%20your%20products%20on%20Unilorin%20campus%20marketplace" target="_blank" class="buy-btn">Chat Seller</a>
+                    </div>
+                </div>
+
+                <div class="featured-card"><img src="images/IMG-20260514-WA0147.jpg">
+                    <div class="featured-info">
+                            <h3>Gucci Wristwatch</h3>
+                            <p class="price">₦17,000 each</p>
+                            <a href="https://wa.me/2349017558500?text=Hello%20I%20saw%20one%20of%20your%20products%20on%20Unilorin%20campus%20marketplace" target="_blank" class="buy-btn"> Chat Seller</a>
+                    </div>
+                </div>
+
+                <div class="featured-card"><img src="images/IMG-20260514-WA0167.jpg">
+                    <div class="featured-info">
+                            <h3>Prada Shade</h3>
+                            <p class="price">₦8,000</p>
+                            <a href="https://wa.me/2349017558500?text=Hello%20I%20saw%20one%20of%20your%20products%20on%20Unilorin%20campus%20marketplace" target="_blank" class="buy-btn"> Chat Seller</a>
+                    </div>
+                </div>
+                
+                
+                <div class="featured-card"><img src="images/IMG-20260512-WA0085.jpg">
+                    <div class="featured-info">
+                            <h3></h3>
+                            <p class="price">₦17,000</p>
+                            <a href="https://wa.me/2347081353145?text=Hello%20I%20saw%20one%20of%20your%20products%20on%20Unilorin%20campus%20marketplace" target="_blank" class="buy-btn"> Chat Seller</a>
+                    </div>
+                </div>
+
+                <div class="featured-card"><img src="images/IMG-20260512-WA0080.jpg">
+                    <div class="featured-info">
+                            <h3></h3>
+                            <p class="price">₦8,000</p>
+                            <a href="https://wa.me/2347081353145?text=Hello%20I%20saw%20one%20of%20your%20products%20on%20Unilorin%20campus%20marketplace" target="_blank" class="buy-btn"> Chat Seller</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="top-sellers" class="top-sellers">
+        <div class="section-title">
+            <h2>Top Sellers</h2>
+        </div>
+
+        <div class="seller-container">
+            <div class="seller-card"><img src="images/IMG-20260518-WA0032.jpg">
+                <div class="seller-info">
+                        <h3>EVERYTHING BY LEEMARH</h3>
+                        <p class="seller-category">HOME OF FASHION</p>
+                        <span class="badge">Top Rated</span>
+                    <div class="seller-buttons">
+                        <button onclick="openDetails('fashion')">View Store</button>
+                        <a href="https://wa.me/2347063687986?text=Hello%20I%20came%20across%20your%20store%20on%20Unilorin%20campus%20marketplace" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seller-card"><img src="images/IMG-20260512-WA0056.jpg">
+                <div class="seller-info">
+                        <h3>AUZELLE</h3>
+                        <p class="seller-category">FASHION STORE</p>
+                        <span class="badge">Verified Seller</span>
+                    <div class="seller-buttons">
+                        <button onclick="openDetails('fashion1')">View Store</button>
+                        <a href="https://wa.me/2347081353145?text=Hello%20I%20came%20across%20your%20store%20on%20Unilorin%20campus%20marketplace" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seller-card"><img src="images/IMG-20260514-WA0001.jpg">
+                <div class="seller-info">
+                        <h3>TEEFAH BAKES</h3>
+                        <p class="seller-category">BAKERY</p>
+                        <span class="badge">Top Rated</span>
+                    <div class="seller-buttons">
+                        <button onclick="openDetails('food')">View Store</button>
+                        <a href="https://wa.me/2347038483174?text=Hello%20I%20came%20across%20your%20store%20on%20Unilorin%20campus%20marketplace" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seller-card"><img src="images/IMG-20260514-WA0017.jpg">
+                <div class="seller-info">
+                        <h3>G FASHI</h3>
+                        <p class="seller-category">FASHION WORLD</p>
+                        <span class="badge">Verified Seller</span>
+                    <div class="seller-buttons">
+                        <button onclick="openDetails('fashion2')">View Store</button>
+                        <a href="https://wa.me/2349017558500?text=Hello%20I%20came%20across%20your%20store%20on%20Unilorin%20campus%20marketplace" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="testimonials">
+            <div class="section-title">
+                <h2>What People Say</h2>
+                <p>Reviews from users and buyers</p>
+            </div>
+                <div class="testimonial-container">
+                    <div class="testimonial-card">
+                        <p class="review-text"> “I bought sneakers from Urban Fashion and the delivery was fast. Very trusted seller!”</p>
+                        <h4>— Amina S.</h4>
+                        <span>Buyer</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="review-text"> “Tech World has quality gadgets. I chatted on WhatsApp and got my phone same day.”</p>
+                        <h4>— Daniel K.</h4>
+                        <span>Buyer</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="review-text"> “As a seller, this platform helped me reach more customers easily.”</p>
+                        <h4>— Urban Fashion</h4>
+                        <span>Seller</span>
+                    </div>
+                </div>
+
+        </section>
+        <section class="cta">
+                <div class="cta-box">
+                        <h2>Ready to Sell Your Products?</h2>
+                        <p>Join our marketplace and reach real buyers instantly through WhatsApp.</p>
+                    <div class="cta-buttons"><a href="https://wa.me/2349015174769?text=I%20want%20to%20become%20a%20seller%20on%20Unilorin%20Campus%20Marketplace%20Website"class="cta-seller"target="_blank">Become a Seller</a>
+                        <a href="#featured" class="cta-browse">Explore Products</a>
+                    </div>
+
+                </div>
+
+        </section>  
+        <footer id="footer" class="footer">
+                <div class="footer-container">
+                    <div class="footer-box">
+                        <h2>MarketPlace</h2>
+                        <p>A student-driven marketplace where buyers meet trusted sellers easily.</p>
+                    </div>
+                    <div class="footer-box">
+                        <h3>Quick Links</h3>
+                        <a href="#">Home</a>
+                        <a href="#featured">Featured Products</a>
+                        <a href="#top-sellers">Top Sellers</a>
+                        <a href="#partners">Partners</a>
+                    </div>
+                    <div class="footer-box">
+                        <h3>Support</h3>
+                        <a href="#footer-box">Contact Us</a>
+                        <a href="https://wa.me/2349015174769?text=I%20want%20to%20become%20a%20seller%20on%20Unilorin%20Campus%20Marketplace%20Website" target="_blank">Become a Seller</a>
+                        <a href="#">FAQs</a>
+                    </div>
+                    <div class="footer-box">
+                        <h3>Contact</h3>
+                        <a href="https://wa.me/2349015174769" target="_blank">Chat on WhatsApp Business</a>
+                        <a href="https://wa.me/2347044294910" target="_blank">Chat on WhatsApp</a>
+                        <a href="mailto:Abdulmujibzubair@gmail.com">Send Email</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                        <p>© 2026 MarketPlace. All rights reserved.</p>
+                </div>
+
+        </footer>
+            <script src="js/script.js"></script>
+</body>
+</html>
