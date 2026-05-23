@@ -460,9 +460,10 @@ body {
   /* PARTNER CARDS */
  
   .card img{
-    height: 400px;
-    width: 300px;
-
+    height: 200px;
+  }
+  .card{
+    width: 90%;
   }
 
   /* BUTTONS */
