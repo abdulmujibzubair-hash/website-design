@@ -265,6 +265,24 @@ body {
   background:darkblue;
 }
 
+@media (max-width:768px){
+
+  .search-section h2{
+    font-size:24px;
+  }
+
+  .search-section input{
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  .search-section button{
+    
+    margin-left:0;
+  }
+
+}
+
 .card-container2 {
     height: auto;
     width: 95%;
