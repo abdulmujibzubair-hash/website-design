@@ -125,7 +125,7 @@ body {
 .hero-left p{
   color:#666;
   margin-bottom:20px;
-  max-width:500px;
+  text-align: left;
 }
 
 /* SEARCH */
@@ -277,7 +277,6 @@ body {
   }
 
   .search-section button{
-    
     margin-left:0;
   }
 
@@ -370,6 +369,7 @@ body {
 
 .card-body h4{
   margin-bottom: 5px;
+  font-weight: lighter;
 }
 
 .card-body p {

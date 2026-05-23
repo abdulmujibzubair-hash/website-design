@@ -152,7 +152,7 @@ function openDetails(type){
 
       <div class="products">
         <img src="images/IMG-20260512-WA0085.jpg">
-        <p></p>
+        <p>Leather Handbag</p>
         <p>₦</p>
       </div>
     `;
@@ -173,9 +173,15 @@ function openDetails(type){
       </div>
 
       <div class="products">
-        <img src="images/IMG-20260514-WA0147.jpg">
-        <p>Gucci Wristwatch</p>
-        <p>₦17,000 each</p>
+        <img src="images/IMG-20260514-WA0169.jpg">
+        <p>Jewelry Set</p>
+        <p>₦17,000</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260514-WA0170.jpg">
+        <p>Jewelry Set</p>
+        <p>₦19,000</p>
       </div>
 
       <div class="products">
@@ -196,28 +202,23 @@ function openDetails(type){
         <p>₦3,500</p>
       </div>
 
+      
+      <div class="products">
+        <img src="images/IMG-20260522-WA0093.jpg">
+        <p>Chunky Bangles</p>
+        <p>₦4,500</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260514-WA0147.jpg">
+        <p>Gucci Wristwatch</p>
+        <p>₦17,000 each</p>
+      </div>
+
       <div class="products">
         <img src="images/IMG-20260514-WA0167.jpg">
         <p>Prada Shade</p>
         <p>₦8,000</p>
-      </div>
-
-      <div class="products">
-        <img src="images/IMG-20260514-WA0169.jpg">
-        <p>Jewelry Set</p>
-        <p>₦17,000</p>
-      </div>
-
-      <div class="products">
-        <img src="images/IMG-20260514-WA0169.jpg">
-        <p>Jewelry Set</p>
-        <p>₦17,000</p>
-      </div>
-
-      <div class="products">
-        <img src="images/IMG-20260514-WA0170.jpg">
-        <p>Jewelry Set</p>
-        <p>₦19,000</p>
       </div>
 
       <div class="products">
@@ -370,43 +371,91 @@ function openDetails(type){
     if(type === 'food1'){
 
     title.innerText = "WELCOME TO CAKES N' TREATS BY OYIN STORE";
-    desc.innerText = "Cakes N' Treats by Oyin is a bakery that specializes in creating delicious and visually stunning cakes and treats. We offer a wide range of delectable desserts, including custom-designed cakes for special occasions, cupcakes, cookies, and other sweet treats. Our commitment to quality and creativity ensures that every bite is a delightful experience for our customers.";
+    desc.innerText = "At Cakes n Treats by Oyin, we believe every celebration deserves something made with care, not mass-produced. We’re a small-batch bakery specializing in custom cakes, cupcakes, cookies, and pastries. We take your ideas and turn them into treats that taste as good as they look. From rich chocolate birthday cakes to buttery cookies and flaky pastries, everything is made with quality ingredients and zero shortcuts. No preservatives, no shortcuts just delicious, handcrafted treats for your special moments.";
 
     products.innerHTML = `
       <div class="products">
-        <img src="">
-        <p></p>
-        <p>₦</p>
+        <img src="images/IMG-20260523-WA0042.jpg">
+        <p>Size 5 Vanilla Cake</p>
+        <p>₦10,000</p>
       </div>
 
        <div class="products">
-        <img src="">
-        <p></p>
-        <p>₦</p>
+        <img src="images/IMG-20260523-WA0044.jpg">
+        <p>Mini Foil Cake</p>
+        <p>₦1,000</p>
       </div>
 
       <div class="products">
-        <img src="">
-        <p></p>
-        <p>₦</p>
+        <img src="images/IMG-20260523-WA0046.jpg">
+        <p>Frosted Foil cakes</p>
+        <p>₦2,500</p>
       </div>
 
        <div class="products">
-        <img src="">
-        <p></p>
-        <p>₦</p>
+        <img src="images/IMG-20260523-WA0050.jpg">
+        <p>Exclusive Package </p>
+        <p>₦35,000</p>
       </div>
 
       <div class="products">
-        <img src="">
-        <p></p>
-        <p>₦</p>
+        <img src="images/IMG-20260522-WA0081.jpg">
+        <p>Mini Package</p>
+        <p>₦25,000</p>
       </div>
 
       <div class="products">
-        <img src="">
-        <p></p>
-        <p>₦</p>
+        <img src="images/IMG-20260522-WA0084.jpg">
+        <p>Custom Birthday Package</p>
+        <p>₦20,000</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260523-WA0052.jpg">
+        <p>Custom Package</p>
+        <p>₦7,000</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260523-WA0054.jpg">
+        <p>Birthday Cake</p>
+        <p>₦7,000</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260522-WA0083.jpg">
+        <p>Birthday Cake</p>
+        <p>₦8,000</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260522-WA0085.jpg">
+        <p>Birthday Cake</p>
+        <p>₦6,500</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260522-WA0086.jpg">
+        <p>Medium Jar of chin chin</p>
+        <p>₦3,000</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260522-WA0087.jpg">
+        <p>Box of 12 Cupcakes</p>
+        <p>₦3,000</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260522-WA0088.jpg">
+        <p>Cake</p>
+        <p>₦12,000</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260522-WA0089.jpg">
+        <p>Cake Parfait</p>
+        <p>₦3,000</p>
       </div>
     `;
   }
