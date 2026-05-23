@@ -15,7 +15,7 @@ function searchPartners(){
       card.classList.remove('hide');
     } else {
       card.classList.add('hide');
-    }
+    } 
 
   });
 

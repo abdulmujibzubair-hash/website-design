@@ -220,7 +220,11 @@ body {
   }
 
   .hero-stats{
-    justify-content:center;
+    justify-content: center;
+  }
+
+  .hero-right img{
+    height: 500px;
   }
 
 }
@@ -245,6 +249,20 @@ body {
   border-radius:10px;
   outline:none;
   font-size:16px;
+}
+
+.search-section button{
+  padding:12px 20px;
+  border:none;
+  background: black;
+  color:white;
+  border-radius:10px;
+  cursor:pointer;
+  margin-left:10px;
+}
+
+.search-section button:hover{
+  background:darkblue;
 }
 
 .card-container2 {
@@ -442,7 +460,9 @@ body {
   /* PARTNER CARDS */
  
   .card img{
-    height: 200px;
+    height: 400px;
+    width: 300px;
+
   }
 
   /* BUTTONS */
