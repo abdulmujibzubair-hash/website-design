@@ -433,7 +433,12 @@ body {
   margin-top: 15px;
   width: 100%;
   max-width: 1400px;
-  border: 0px solid yellow;
+  border: 0px solid black;
+}
+
+.products img:hover{
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transform:  scale(1.05);
 }
 
 .products img{

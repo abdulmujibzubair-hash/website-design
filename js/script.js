@@ -116,14 +116,14 @@ function openDetails(type){
     products.innerHTML = `
       <div class="products">
         <img src="images/IMG-20260512-WA0077.jpg">
-        <p></p>
-        <p>₦</p>
+        <p>Jingle Bracelet or Anklet</p>
+        <p>₦2,500</p>
       </div>
 
       <div class="products">
-        <img src="images/IMG-20260512-WA0078.jpg">
+        <img src="images/IMG-20260523-WA0067.jpg">
         <p></p>
-        <p>₦</p>
+        <p>₦2,500</p>
       </div>
 
       <div class="products">
@@ -149,14 +149,56 @@ function openDetails(type){
         <p></p>
         <p>₦</p>
       </div>
-
+   
       <div class="products">
         <img src="images/IMG-20260512-WA0085.jpg">
         <p>Leather Handbag</p>
         <p>₦</p>
       </div>
-    `;
 
+       <div class="products">
+        <img src="images/IMG-20260512-WA0093.jpg">
+        <p>Quality Handbag</p>
+        <p>₦9.000 each</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260523-WA0064.jpg">
+        <p>Quality Handbag</p>
+        <p>₦10,000</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260523-WA0066.jpg">
+        <p>Summer Vibes Totes</p>
+        <p>₦10,000 each</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260512-WA0093.jpg">
+        <p></p>
+        <p>₦</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260512-WA0090.jpg">
+        <p>Customized Cap</p>
+        <p>Price varies based on preference</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260523-WA0069.jpg">
+        <p>Size run(38-42) <br> Not boxed</p>
+        <p>₦19,000</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260523-WA0071.jpg">
+        <p>Size run(40-45) <br> Not boxed</p>
+        <p>₦23,000</p>
+      </div>
+    `;
+  
   }
 
 
@@ -456,6 +498,98 @@ function openDetails(type){
         <img src="images/IMG-20260522-WA0089.jpg">
         <p>Cake Parfait</p>
         <p>₦3,000</p>
+      </div>
+    `;
+    }
+
+    if(type === 'food2'){
+
+    title.innerText = "WELCOME TO RAHA'S TREAT STORE";
+    desc.innerText = "";
+
+    products.innerHTML = `
+      <div class="products">
+        <img src="images/IMG-20251004-WA0111.jpg">
+        <p></p>
+        <p>₦</p>
+      </div>
+
+       <div class="products">
+        <img src="images/IMG-20251004-WA0115.jpg">
+        <p></p>
+        <p>₦</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20251004-WA0120.jpg">
+        <p></p>
+        <p>₦</p>
+      </div>
+
+       <div class="products">
+        <img src="images/IMG-20251004-WA0119.jpg">
+        <p></p>
+        <p>₦</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20251004-WA0107.jpg">
+        <p></p>
+        <p>₦</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20251004-WA0110.jpg">
+        <p></p>
+        <p>₦</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20251004-WA0114.jpg">
+        <p></p>
+        <p>₦</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20251004-WA0116.jpg">
+        <p></p>
+        <p>₦</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20251004-WA0118.jpg">
+        <p></p>
+        <p>₦</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20251004-WA0121.jpg">
+        <p></p>
+        <p>₦</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20251004-WA0113.jpg">
+        <p></p>
+        <p>₦</p>
+      </div>
+
+      <div class="products">
+        <img src="">
+        <p></p>
+        <p>₦</p>
+      </div>
+
+      <div class="products">
+        <img src="">
+        <p></p>
+        <p>₦</p>
+      </div>
+
+      <div class="products">
+        <img src="">
+        <p></p>
+        <p>₦</p>
       </div>
     `;
   }
