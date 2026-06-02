@@ -573,26 +573,66 @@ function openDetails(type){
         <p></p>
         <p>₦</p>
       </div>
-
-      <div class="products">
-        <img src="">
-        <p></p>
-        <p>₦</p>
-      </div>
-
-      <div class="products">
-        <img src="">
-        <p></p>
-        <p>₦</p>
-      </div>
-
-      <div class="products">
-        <img src="">
-        <p></p>
-        <p>₦</p>
-      </div>
     `;
   }
+
+  if(type === 'food3'){
+
+    title.innerText = "WELCOME TO MIDATE'S TREAT STORE";
+    desc.innerText = "Midate's Treats is a brand dedicated to expressing love through thoughtfully curated cakes, pastries and gifts. MT delivers experiences of bliss and beyond through its range of services.";
+
+    products.innerHTML = `
+       <div class="products">
+        <img src="images/IMG-20260601-WA0121.jpg">
+        <p>Cake</p>
+        <p>₦30,000</p>
+      </div>
+
+       <div class="products">
+        <img src="images/IMG-20260601-WA0125.jpg">
+        <p>Cake Slice</p>
+        <p>₦1,200</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260601-WA0129.jpg">
+        <p>Cake</p>
+        <p>₦4,000</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260601-WA0122.jpg">
+        <p>Fruity Cake</p>
+        <p>₦4,000</p>
+      </div>
+
+       <div class="products">
+        <img src="images/IMG-20260601-WA0123.jpg">
+        <p>Big Foil cake</p>
+        <p>₦3,500</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260601-WA0124.jpg">
+        <p>Small and medium foil cakes</p>
+        <p>₦1,400/₦1,700</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260601-WA0148.jpg">
+        <p>Small chop plate</p>
+        <p>₦1,500 upward</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260601-WA0120.jpg">
+        <p>Egg roll</p>
+        <p>₦600</p>
+      </div>
+
+    `;
+  }
+
 
   details.scrollIntoView({ behavior:'smooth' });
 
