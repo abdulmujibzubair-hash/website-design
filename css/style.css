@@ -45,7 +45,7 @@ body {
 }
 
 .nav-links a:hover{
-  background:darkblue;
+  background:green;
   color: white;
 }
 
@@ -262,7 +262,7 @@ body {
 }
 
 .search-section button:hover{
-  background:darkblue;
+  background:green;
 }
 
 @media (max-width:768px){
@@ -327,7 +327,7 @@ body {
 }
 
 .categories button:hover{
-    background: darkblue;
+    background: green;
     color: white;
 }
 
@@ -449,7 +449,7 @@ body {
   border-radius: 15px;
 }
 
-.close-btn{
+.close-btn1{
   margin-top: 15px;
   padding: 10px;
   border: 0px solid black;
@@ -942,6 +942,44 @@ body {
 
 }
 
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    z-index:1000;
+}
+
+.modal-content{
+    background:white;
+    width:90%;
+    max-width:500px;
+    margin:50px auto;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    position:relative;
+}
+
+.profile-pic{
+    width: 230px;
+    height: 230px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.close-btn{
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:30px;
+    cursor:pointer;
+}
+
 
 .guide-container{
     max-width:900px;
@@ -963,7 +1001,7 @@ body {
 
 .guide-container h1{
     margin-bottom:15px;
-    color: green;
+    color: black;
     text-align: center;
 }
 
@@ -988,5 +1026,76 @@ body {
 }
 
 .back-btn:hover{
-    opacity:0.9;
+    opacity: 0.9;
+}
+
+
+.faq-btn {
+  padding: 10px 15px;
+  border: none;
+  background: black;
+  color: #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Overlay */
+.faq-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Box */
+.faq-modal-content {
+  background: white;
+  color: black;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.faq-modal-content h2 {
+  margin-bottom: 15px;
+}
+
+.faq-modal-content p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: black;
+}
+
+.faq-modal-content strong {
+  color: green;
+}
+
+@media(max-width:768px){
+
+  .faq-modal-content h2{
+    text-align:center;
+  }
+  .faq-modal-content p{
+    text-align: start;
+  }
+  .faq-modal-content strong{
+    text-align: start;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 25px;
+  cursor: pointer;
 }

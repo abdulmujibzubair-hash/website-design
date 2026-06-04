@@ -75,7 +75,7 @@ function openDetails(type){
       </div>
 
       <div class="products">
-        <img src="images/IMG-20260518-WA0003.jpg">
+        <img src="images/IMG-20260518-WA0003(1).jpg">
         <p>Quality Handbags</p>
         <p>₦25,000</p>
       </div>
@@ -117,12 +117,6 @@ function openDetails(type){
       <div class="products">
         <img src="images/IMG-20260512-WA0077.jpg">
         <p>Jingle Bracelet or Anklet</p>
-        <p>₦2,500</p>
-      </div>
-
-      <div class="products">
-        <img src="images/IMG-20260523-WA0067.jpg">
-        <p></p>
         <p>₦2,500</p>
       </div>
 
@@ -175,7 +169,7 @@ function openDetails(type){
       </div>
 
       <div class="products">
-        <img src="images/IMG-20260512-WA0093.jpg">
+        <img src="images/IMG-20260512-WA0086.jpg">
         <p></p>
         <p>₦</p>
       </div>
@@ -209,7 +203,7 @@ function openDetails(type){
 
     products.innerHTML = `
       <div class="products">
-        <img src="images/IMG-20260514-WA0135.jpg">
+        <img src="images/IMG-20260514-WA0135(1).jpg">
         <p>Owambe Jewelry Set</p>
         <p>₦17,000</p>
       </div>
@@ -502,81 +496,8 @@ function openDetails(type){
     `;
     }
 
-    if(type === 'food2'){
-
-    title.innerText = "WELCOME TO RAHA'S TREAT STORE";
-    desc.innerText = "";
-
-    products.innerHTML = `
-      <div class="products">
-        <img src="images/IMG-20251004-WA0111.jpg">
-        <p></p>
-        <p>₦</p>
-      </div>
-
-       <div class="products">
-        <img src="images/IMG-20251004-WA0115.jpg">
-        <p></p>
-        <p>₦</p>
-      </div>
-
-      <div class="products">
-        <img src="images/IMG-20251004-WA0120.jpg">
-        <p></p>
-        <p>₦</p>
-      </div>
-
-       <div class="products">
-        <img src="images/IMG-20251004-WA0119.jpg">
-        <p></p>
-        <p>₦</p>
-      </div>
-
-      <div class="products">
-        <img src="images/IMG-20251004-WA0107.jpg">
-        <p></p>
-        <p>₦</p>
-      </div>
-
-      <div class="products">
-        <img src="images/IMG-20251004-WA0110.jpg">
-        <p></p>
-        <p>₦</p>
-      </div>
-
-      <div class="products">
-        <img src="images/IMG-20251004-WA0114.jpg">
-        <p></p>
-        <p>₦</p>
-      </div>
-
-      <div class="products">
-        <img src="images/IMG-20251004-WA0116.jpg">
-        <p></p>
-        <p>₦</p>
-      </div>
-
-      <div class="products">
-        <img src="images/IMG-20251004-WA0118.jpg">
-        <p></p>
-        <p>₦</p>
-      </div>
-
-      <div class="products">
-        <img src="images/IMG-20251004-WA0121.jpg">
-        <p></p>
-        <p>₦</p>
-      </div>
-
-      <div class="products">
-        <img src="images/IMG-20251004-WA0113.jpg">
-        <p></p>
-        <p>₦</p>
-      </div>
-    `;
-  }
-
-  if(type === 'food3'){
+    
+  if(type === 'food2'){
 
     title.innerText = "WELCOME TO MIDATE'S TREAT STORE";
     desc.innerText = "Midate's Treats is a brand dedicated to expressing love through thoughtfully curated cakes, pastries and gifts. MT delivers experiences of bliss and beyond through its range of services.";
@@ -590,14 +511,14 @@ function openDetails(type){
 
        <div class="products">
         <img src="images/IMG-20260601-WA0125.jpg">
-        <p>Cake Slice</p>
-        <p>₦1,200</p>
+        <p>Cake</p>
+        <p>₦13,000</p>
       </div>
 
       <div class="products">
         <img src="images/IMG-20260601-WA0129.jpg">
-        <p>Cake</p>
-        <p>₦4,000</p>
+        <p>Cake slice</p>
+        <p>₦1,200</p>
       </div>
 
       <div class="products">
@@ -618,6 +539,7 @@ function openDetails(type){
         <p>₦1,400/₦1,700</p>
       </div>
 
+     
       <div class="products">
         <img src="images/IMG-20260601-WA0148.jpg">
         <p>Small chop plate</p>
@@ -651,3 +573,141 @@ function toggleMenu(){
 
 }
 
+const faqModal = document.getElementById("faqModal");
+const openFaqBtn = document.getElementById("openFaqBtn");
+const closeFaq = document.getElementById("closeFaq");
+
+openFaqBtn.onclick = function () {
+  faqModal.style.display = "flex";
+};
+
+closeFaq.onclick = function () {
+  faqModal.style.display = "none";
+};
+
+window.onclick = function (e) {
+  if (e.target === faqModal) {
+    faqModal.style.display = "none";
+  }
+};
+
+
+
+
+function openProfile(sellerId){
+
+    const seller = sellers[sellerId];
+
+    document.getElementById("sellerImage").src =
+        seller.image;
+
+    document.getElementById("sellerName").textContent =
+        seller.name;
+
+    document.getElementById("sellerDepartment").textContent =
+        " Department: " + seller.department;
+
+    document.getElementById("sellerFaculty").textContent =
+        " Faculty: " + seller.faculty;
+
+    document.getElementById("sellerJoined").textContent =
+        " Joined: " + seller.joined;
+
+    document.getElementById("sellerListings").textContent =
+        " Listings: " + seller.listings;
+    document.getElementById("sellerStatus").textContent =
+        " Status: " + seller.status;
+
+    document.getElementById("sellerBadge").textContent =
+        " Badge: " + seller.badge;
+
+    document.getElementById("profileModal").style.display =
+        "block";
+}
+
+
+const sellers = {
+  seller1: {
+    image: "images/IMG-20260604-WA0059.jpg",
+    name: "ABDULLAHI OJOTU HALIMAH",
+    department: "Chemistry",
+    faculty: "Physical Science",
+    joined: "Member since May, 2026",
+    listings: 8,
+    status: "👑 Founding Seller",
+    badge: "🏆 Top Rated"
+  },
+
+  seller2: {
+    image: "images/IMG-20260513-WA0246(1).jpg",
+    name: "BELLO LATEEFAT AYOMIDE",
+    department: "Geography and Environmental Management",
+    faculty: "Social Sciences",
+    joined: "Member since May, 2026",
+    listings: 6,
+    status: "👑 Founding Seller",
+    badge: "🏆 Top Rated"
+  },
+
+  seller3: {
+    image: "images/IMG-20260604-WA0054.jpg",
+    name: "DORIS DAMOLA OLALEYE",
+    department: "Geography and Environmental Management",
+    faculty: "Social Sciences",
+    joined: "Member since May, 2026",
+    listings: 13,
+    status: "👑 Founding Seller",
+    badge: "✅ Verified Seller"
+  },
+
+  seller4: {
+    image: "",
+    name: "OYEDEJI GANIYAT WURAOLA",
+    department: "Geography and Environmental Management",
+    faculty: "Social Sciences",
+    joined: "Member since May, 2026",
+    listings: 12,
+    status: "👑 Founding Seller",
+    badge: "✅ Verified Seller"
+  },
+
+  seller5: {
+    image: "images/IMG-20260520-WA0089.jpg",
+    name: "AKINYEMI STEPHANIE",
+    department: "Linguistics and Nigerian Languages",
+    faculty: "Arts",
+    joined: "Member since May, 2026",
+    listings: 12,
+    status: "👑 Founding Seller",
+    badge: "✅ Verified Seller"
+  },
+
+  seller6: {
+    image: "images/IMG-20260518-WA0211.jpg",
+    name: "BANJO GOODNESS OYINDAMOLA",
+    department: "Accounting",
+    faculty: "Management Sciences",
+    joined: "Member since May, 2026",
+    listings: 14,
+    status: "👑 Founding Seller",
+    badge: "✅ Verified Seller"
+  },
+
+  seller7: {
+    image: "images/IMG-20260601-WA0118.jpg",
+    name: "ABODUNRIN ADEDOLAPO DEBORAH",
+    department: "Geography and Environmental Management",
+    faculty: "Social Sciences",
+    joined: "Member since May, 2026",
+    listings: 8,
+    status: "👑 Founding Seller",
+    badge: "✅ Verified Seller"
+  }
+};
+
+
+function closeProfile(){
+
+    document.getElementById("profileModal").style.display =
+        "none";
+}
