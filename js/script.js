@@ -632,7 +632,7 @@ const sellers = {
     name: "ABDULLAHI OJOTU HALIMAH",
     department: "Chemistry",
     faculty: "Physical Science",
-    joined: "Member since May, 2026",
+    joined: "📅 Member since May, 2026",
     listings: 8,
     status: "👑 Founding Seller",
     badge: "🏆 Top Rated"
@@ -643,7 +643,7 @@ const sellers = {
     name: "BELLO LATEEFAT AYOMIDE",
     department: "Geography and Environmental Management",
     faculty: "Social Sciences",
-    joined: "Member since May, 2026",
+    joined: "📅 Member since May, 2026",
     listings: 6,
     status: "👑 Founding Seller",
     badge: "🏆 Top Rated"
@@ -654,18 +654,18 @@ const sellers = {
     name: "DORIS DAMOLA OLALEYE",
     department: "Geography and Environmental Management",
     faculty: "Social Sciences",
-    joined: "Member since May, 2026",
+    joined: "📅 Member since May, 2026",
     listings: 13,
     status: "👑 Founding Seller",
     badge: "✅ Verified Seller"
   },
 
   seller4: {
-    image: "",
+    image: "images/IMG-20260604-WA0154.jpg",
     name: "OYEDEJI GANIYAT WURAOLA",
     department: "Geography and Environmental Management",
     faculty: "Social Sciences",
-    joined: "Member since May, 2026",
+    joined: "📅 Member since May, 2026",
     listings: 12,
     status: "👑 Founding Seller",
     badge: "✅ Verified Seller"
@@ -676,7 +676,7 @@ const sellers = {
     name: "AKINYEMI STEPHANIE",
     department: "Linguistics and Nigerian Languages",
     faculty: "Arts",
-    joined: "Member since May, 2026",
+    joined: "📅 Member since May, 2026",
     listings: 12,
     status: "👑 Founding Seller",
     badge: "✅ Verified Seller"
@@ -687,7 +687,7 @@ const sellers = {
     name: "BANJO GOODNESS OYINDAMOLA",
     department: "Accounting",
     faculty: "Management Sciences",
-    joined: "Member since May, 2026",
+    joined: "📅 Member since May, 2026",
     listings: 14,
     status: "👑 Founding Seller",
     badge: "✅ Verified Seller"
@@ -698,7 +698,7 @@ const sellers = {
     name: "ABODUNRIN ADEDOLAPO DEBORAH",
     department: "Geography and Environmental Management",
     faculty: "Social Sciences",
-    joined: "Member since May, 2026",
+    joined: "📅 Member since May, 2026",
     listings: 8,
     status: "👑 Founding Seller",
     badge: "✅ Verified Seller"
