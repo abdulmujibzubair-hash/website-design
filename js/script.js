@@ -278,7 +278,7 @@ function openDetails(type){
 
   }
 
-  if(type === 'fashion3'){
+  if(type === 'skincare'){
 
     title.innerText = "WELCOME TO ANNIE'S BLISS STORE";
     desc.innerText = "Annie's Bliss is a fashion and lifestyle brand that offers a curated collection of skincare essentials and accessories.";
@@ -357,6 +357,57 @@ function openDetails(type){
       </div>
     `;
 
+  }
+
+  if(type === 'skincare1'){
+
+    title.innerText = "WELCOME TO KANYIN SCENTS & SKINCARE'S STORE";
+    desc.innerText = "We are passionate about providing clean, non-toxic, and organic skincare solutions that give you a natural, flawless glow. Our products are crafted with care, using only the finest ingredients to nourish your skin and enhance your natural beauty. From rejuvenating serums to hydrating moisturizers, we offer a range of skincare essentials designed to help you achieve radiant, healthy skin. At Kanyin Scents & Skincare, we believe that true beauty comes from within, and our mission is to empower you to embrace your unique glow with confidence.";
+
+    products.innerHTML = `
+      <div class="products">
+        <img src="images/IMG-20260606-WA0013.jpg">
+        <p>25ml Bakkarat Satin Oud</p>
+        <p>₦4,000</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260606-WA0012.jpg">
+        <p>Unisex Element Perfume</p>
+        <p>₦5,000</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260606-WA0011.jpg">
+        <p>25ml Mousuf</p>
+        <p>₦3,500</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260606-WA0010.jpg">
+        <p>My way Essence Perfume</p>
+        <p>₦5,500</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260606-WA0009.jpg">
+        <p>50ml pink Mousuf Wardi</p>
+        <p>₦5,500</p>
+      </div>
+   
+      <div class="products">
+        <img src="images/IMG-20260606-WA0008.jpg">
+        <p>50ml Anti-odor tag roll on</p>
+        <p>₦1,500</p>
+      </div>
+
+       <div class="products">
+        <img src="images/IMG-20260606-WA0007.jpg">
+        <p>Nude Confetti body spray</p>
+        <p>₦3,800</p>
+      </div>
+    `;
+  
   }
 
 
@@ -700,6 +751,17 @@ const sellers = {
     faculty: "Social Sciences",
     joined: "📅 Member since May, 2026",
     listings: 8,
+    status: "👑 Founding Seller",
+    badge: "✅ Verified Seller"
+  },
+
+   seller8: {
+    image: "images/IMG-20260606-WA0000.jpg",
+    name: "ISA JELILA OYINDAMOLA",
+    department: "Mass Communication",
+    faculty: "Communication and Information Sciences",
+    joined: "📅 Member since June, 2026",
+    listings: 7,
     status: "👑 Founding Seller",
     badge: "✅ Verified Seller"
   }
