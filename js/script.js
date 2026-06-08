@@ -362,7 +362,7 @@ function openDetails(type){
   if(type === 'skincare1'){
 
     title.innerText = "WELCOME TO KANYIN SCENTS & SKINCARE'S STORE";
-    desc.innerText = "We are passionate about providing clean, non-toxic, and organic skincare solutions that give you a natural, flawless glow. Our products are crafted with care, using only the finest ingredients to nourish your skin and enhance your natural beauty. From rejuvenating serums to hydrating moisturizers, we offer a range of skincare essentials designed to help you achieve radiant, healthy skin. At Kanyin Scents & Skincare, we believe that true beauty comes from within, and our mission is to empower you to embrace your unique glow with confidence.";
+    desc.innerText = "At kanyin scents and skincare, we help you elevate your daily routine with skincare that nourishes and fragrances that leave a lasting impression. Let ur skin shine and your scent speak before you do. Enjoy radiant skin and captivating fragrance at prices your wallet will love. Because you deserved to be remembered";
 
     products.innerHTML = `
       <div class="products">
@@ -405,6 +405,24 @@ function openDetails(type){
         <img src="images/IMG-20260606-WA0007.jpg">
         <p>Nude Confetti body spray</p>
         <p>₦3,800</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260608-WA0000.jpg">
+        <p>Refreshing facial wash <br>for all skin type</p>
+        <p>₦6,000</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260608-WA0001.jpg">
+        <p>Pei Mei Vitamin C erum for glowing skin</p>
+        <p>₦2,500</p>
+      </div>
+
+      <div class="products">
+        <img src="images/IMG-20260608-WA0002.jpg">
+        <p>Estelin niacinamide serum for dark spots and radiant skin</p>
+        <p>₦5,000</p>
       </div>
     `;
   
@@ -761,7 +779,7 @@ const sellers = {
     department: "Mass Communication",
     faculty: "Communication and Information Sciences",
     joined: "📅 Member since June, 2026",
-    listings: 7,
+    listings: 10,
     status: "👑 Founding Seller",
     badge: "✅ Verified Seller"
   }
